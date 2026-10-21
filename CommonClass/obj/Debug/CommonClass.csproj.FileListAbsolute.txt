@@ -1,0 +1,5 @@
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\CommonClass\bin\Debug\CommonClass.dll
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\CommonClass\bin\Debug\CommonClass.pdb
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\CommonClass\obj\Debug\CommonClass.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\CommonClass\obj\Debug\CommonClass.dll
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\CommonClass\obj\Debug\CommonClass.pdb

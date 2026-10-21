@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EFA1D3EE-EA32-411A-BA42-852268B3E67C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Toko_Root_ID</RootNamespace>
+    <AssemblyName>Toko-Root-ID</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Barang\BarangTemplate.cs" />
+    <Compile Include="dbTokoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbTokoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Grid\grdBarangTemplate.cs" />
+    <Compile Include="Grid\grdUserTemplate.cs" />
+    <Compile Include="Login\LoginTemplate.cs" />
+    <Compile Include="MenuUtama\MenuUtamaTemplate.cs" />
+    <Compile Include="Penjualan\PenjualanTemplate.cs" />
+    <Compile Include="Report\ReportTemplate.cs" />
+    <Compile Include="Report\ReportStrukTemplate.cs" />
+
+    <Compile Include="User\FormUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\FormUser.Designer.cs">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppTheme.cs" />
+    <Compile Include="MenuUtama\FormUtama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuUtama\FormUtama.Designer.cs">
+      <DependentUpon>FormUtama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\form_login_id.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\form_login_id.Designer.cs">
+      <DependentUpon>form_login_id.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Barang\frmBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barang\frmBarang.Designer.cs">
+      <DependentUpon>frmBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualan.Designer.cs">
+      <DependentUpon>frmPenjualan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grid\grdBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grid\grdBarang.Designer.cs">
+      <DependentUpon>grdBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grid\grdUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grid\grdUser.Designer.cs">
+      <DependentUpon>grdUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\Report_Barang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Report_Transaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\UserTemplate.cs" />
+    <EmbeddedResource Include="User\FormUser.resx">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuUtama\FormUtama.resx">
+      <DependentUpon>FormUtama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\form_login_id.resx">
+      <DependentUpon>form_login_id.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Barang\frmBarang.resx">
+      <DependentUpon>frmBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPenjualan.resx">
+      <DependentUpon>frmPenjualan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grid\grdBarang.resx">
+      <DependentUpon>grdBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grid\grdUser.resx">
+      <DependentUpon>grdUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="dbTokoDataSet.xsc">
+      <DependentUpon>dbTokoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbTokoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbTokoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbTokoDataSet.xss">
+      <DependentUpon>dbTokoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\CommonClass.ClassBarang.datasource" />
+    <None Include="Properties\DataSources\CommonClass.ClassFaktur.datasource" />
+    <None Include="Properties\DataSources\CommonClass.ClassIsiFaktur.datasource" />
+    <None Include="Properties\DataSources\CommonClass.ClassTempIsiFaktur.datasource" />
+    <None Include="Properties\DataSources\CommonClass.ClassUser.datasource" />
+    <None Include="Properties\DataSources\DAAccess.DABarang.datasource" />
+    <None Include="Properties\DataSources\DAAccess.DAPenjualan.datasource" />
+    <None Include="Properties\DataSources\DAAccess.DAUser.datasource" />
+    <None Include="Properties\DataSources\DAAccess.dbConfiguration.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonClass\CommonClass.csproj">
+      <Project>{ff46a99e-658f-4f09-a21f-1edec55b2eb9}</Project>
+      <Name>CommonClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAAccess\DAAccess.csproj">
+      <Project>{f269b73d-554d-423b-8e66-74cea67bb217}</Project>
+      <Name>DAAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Helper\Helper.csproj">
+      <Project>{92d02f5d-ce6e-457a-8313-fb695e245fd1}</Project>
+      <Name>Helper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

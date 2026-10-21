@@ -1,0 +1,11 @@
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\DAAccess\obj\Debug\DAAccess.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\DAAccess\obj\Debug\DAAccess.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\DAAccess\bin\Debug\DAAccess.dll
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\DAAccess\bin\Debug\DAAccess.pdb
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\DAAccess\bin\Debug\CommonClass.dll
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\DAAccess\bin\Debug\Helper.dll
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\DAAccess\bin\Debug\CommonClass.pdb
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\DAAccess\bin\Debug\Helper.pdb
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\DAAccess\obj\Debug\DAAccess.csproj.CopyComplete
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\DAAccess\obj\Debug\DAAccess.dll
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\DAAccess\obj\Debug\DAAccess.pdb

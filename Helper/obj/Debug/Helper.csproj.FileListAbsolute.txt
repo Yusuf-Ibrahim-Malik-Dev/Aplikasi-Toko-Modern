@@ -1,0 +1,9 @@
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\Helper\obj\Debug\Helper.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\Helper\bin\Debug\Helper.dll
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\Helper\bin\Debug\Helper.pdb
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\Helper\bin\Debug\CommonClass.dll
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\Helper\bin\Debug\CommonClass.pdb
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\Helper\obj\Debug\Helper.csproj.CopyComplete
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\Helper\obj\Debug\Helper.dll
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\Helper\obj\Debug\Helper.pdb
