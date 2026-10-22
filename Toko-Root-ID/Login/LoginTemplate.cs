@@ -129,7 +129,7 @@ namespace Toko_Root_ID.Login
             });
             // Tiap fitur terdiri dari ikon cek dan teks; angka terakhir adalah posisi vertikal (Y).
             AddFeature(panel, "✓", "Real-time monitoring stok", 350);
-            AddFeature(panel, "✓", "Transaksi aman & cepat", 382);
+            AddFeature(panel, "✓", "Transaksi aman dan cepat", 382);
             AddFeature(panel, "✓", "Laporan otomatis", 414);
             // Informasi versi aplikasi di bagian bawah. Anchor membuat jarak dari bawah tetap terjaga.
             panel.Controls.Add(new Label

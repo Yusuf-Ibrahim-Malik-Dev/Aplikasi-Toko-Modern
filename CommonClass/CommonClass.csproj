@@ -44,6 +44,9 @@
     <Compile Include="ClassFaktur.cs" />
     <Compile Include="ClassIsiFaktur.cs" />
     <Compile Include="ClassIsiFakturJumlah.cs" />
+    <Compile Include="ClassMasterToko.cs" />
+    <Compile Include="ClassPembelian.cs" />
+    <Compile Include="ClassPenjualan.cs" />
     <Compile Include="ClassTempIsiFaktur.cs" />
     <Compile Include="ClassUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -5,10 +5,20 @@ Dokumen ini menjelaskan fungsi file template yang mengatur tampilan aplikasi. Ko
 ## Pembagian tanggung jawab
 
 - `AppTheme.cs`: palet warna global, gaya tombol/input/tabel, mode terang/gelap, dan penyimpanan pilihan tema.
+- `UI/UiKit.cs`: komponen halaman bersama (`Page`, `Tabs`, `Card`, `Grid`, `FillCombo`) yang dipakai modul baru agar jarak, warna, dan gaya tabel konsisten.
+- `UI/Charts.cs`: kontrol grafik custom (`StatCard`, `BarChartControl`, `HBarChartControl`, `DonutChartControl`) untuk dashboard dan laporan.
 - `Login/LoginTemplate.cs`: seluruh rancangan layar login modern, termasuk panel branding, input, tombol, dekorasi gradient, dan efek fokus.
-- `MenuUtama/MenuUtamaTemplate.cs`: kerangka dashboard, sidebar, header, kartu metrik, grafik contoh, akses cepat, halaman tema, dan navigasi ke form fitur.
-- `Barang/BarangTemplate.cs`: gaya visual form barang.
-- `Penjualan/PenjualanTemplate.cs`: gaya visual layar kasir dan tabel detail transaksi.
+- `MenuUtama/MenuUtamaTemplate.cs`: kerangka dashboard, sidebar berkelompok, header, kartu metrik, grafik data nyata, aksi cepat, halaman tema, dan navigasi ke form fitur. `CanOpen()` menentukan menu yang boleh dibuka sesuai role.
+- `Penjualan/POSTemplate.cs`: tema layar kasir baru (`frmPOS`), termasuk keranjang, ringkasan pembayaran, dan pratinjau struk.
+- `Penjualan/PenjualanTemplate.cs`: gaya visual layar kasir klasik dan tabel detail transaksi.
+- `Pembelian/PembelianTemplate.cs`: tema form pembelian, riwayat pembelian, dan struk pembelian.
+- `Master/MasterTemplate.cs`: tema halaman master data (barang, pelanggan, supplier, kategori, satuan, merek).
+- `Inventory/InventoryTemplate.cs`: tema halaman stok, mutasi, opname, dan transfer gudang.
+- `Keuangan/KeuanganTemplate.cs`: tema halaman kas, piutang, hutang, dan aksi cepat keuangan.
+- `Laporan/LaporanTemplate.cs`: tema halaman laporan dan grafik, termasuk filter, ekspor, dan grafik.
+- `Retur/ReturTemplate.cs`: tema form retur penjualan/pembelian.
+- `Pengaturan/PengaturanTemplate.cs`: tema halaman profil toko, tampilan, dan tentang aplikasi.
+- `Barang/BarangTemplate.cs`: gaya visual form barang lama.
 - `Grid/grdBarangTemplate.cs` dan `Grid/grdUserTemplate.cs`: gaya visual tabel daftar barang/pengguna.
 - `User/UserTemplate.cs`: gaya visual form pengguna dan penyamaran input password.
 - `Report/ReportBarangTemplate.cs` dan `Report/ReportTransaksiTemplate.cs`: pengaturan jendela dan Report Viewer laporan.
@@ -53,8 +63,25 @@ StyleNamedButton(form, "btnSave", AppTheme.ButtonStyle.Primary);
 
 Untuk UI yang dirakit dari kode seperti login/dashboard, ubah nilai `Location` dan `Size` langsung di template tersebut. Contoh `new Point(56, 196)` berarti posisi 56 pixel dari kiri parent dan 196 pixel dari atas parent. Jika kontrol menggunakan `Dock`, nilai `Location` biasanya tidak menjadi penentu posisi akhir karena tata letak ditentukan oleh `Dock`.
 
+## Cara memakai UiKit pada modul baru
+
+Modul baru tidak memakai Designer. Pola umumnya:
+
+```csharp
+var page = UiKit.Page(this, "Judul Halaman", "Keterangan singkat");
+page.Actions.Controls.Add(UiKit.Button("Simpan", OnSave));
+page.Body.Controls.Add(myGrid);
+```
+
+- `Page(this, judul, subjudul)` membersihkan `Controls` form lalu membuat header, area aksi (`page.Actions`), dan badan halaman (`page.Body`).
+- `Card(x, y, width, height)` membuat panel bersudut membulat untuk mengelompokkan kontrol.
+- `Grid()` menyiapkan `DataGridView` bergaya tabel aplikasi. Panggil `UiKit.FillCombo(combo, table, valueMember, displayMember)` untuk mengisi combobox dari `DataTable`; method ini aman untuk tabel kosong.
+- `Tabs()` dan `Tab("Nama")` membuat tab bertema untuk memisahkan daftar, form, dan riwayat.
+
+Grafik memakai `Charts.cs`, bukan chart bawaan .NET, supaya tampilan konsisten di mode terang/gelap. Isi data batang dengan `SetData(List<ClassChartPoint>)`, sedangkan donut memakai properti `Aman`, `Menipis`, `Habis`, dan `Caption`.
+
 ## Hal yang jangan dipindahkan ke template
 
 Template bertanggung jawab pada tampilan. Validasi, login, query database, perhitungan harga/stok, transaksi, dan event bisnis tetap ada di file form atau class service/data access. Template boleh membentuk kontrol dan mengatur gaya; form tetap menghubungkan event tombol ke logika bisnis.
 
-> Catatan: grafik dashboard saat ini berisi angka contoh visual di `DrawSalesChart()`. Komentar di kode menandai bagian tersebut agar tidak disalahartikan sebagai laporan penjualan aktual.
+> Catatan: dashboard dan halaman **Laporan dan Grafik** sekarang memakai data aktual dari `DALaporan` (omzet, laba kotor, stok, piutang/hutang, produk terlaris, dan tren penjualan), bukan angka contoh. Jika database belum tersambung, dashboard menampilkan pesan status dan nilai nol.

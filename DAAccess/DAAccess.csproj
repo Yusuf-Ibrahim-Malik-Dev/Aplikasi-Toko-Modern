@@ -42,7 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DABarang.cs" />
+    <Compile Include="DAInventory.cs" />
+    <Compile Include="DAKeuangan.cs" />
+    <Compile Include="DALaporan.cs" />
+    <Compile Include="DAMaster.cs" />
+    <Compile Include="DAPembelian.cs" />
     <Compile Include="DAPenjualan.cs" />
+    <Compile Include="DARetur.cs" />
     <Compile Include="DAUser.cs" />
     <Compile Include="dbConfiguration.cs" />
     <Compile Include="DbConnection.cs" />

@@ -60,9 +60,20 @@
     <Compile Include="Login\LoginTemplate.cs" />
     <Compile Include="MenuUtama\MenuUtamaTemplate.cs" />
     <Compile Include="Penjualan\PenjualanTemplate.cs" />
+    <Compile Include="Penjualan\POSTemplate.cs" />
+    <Compile Include="Pembelian\PembelianTemplate.cs" />
+    <Compile Include="Master\MasterTemplate.cs" />
+    <Compile Include="Inventory\InventoryTemplate.cs" />
+    <Compile Include="Keuangan\KeuanganTemplate.cs" />
+    <Compile Include="Laporan\LaporanTemplate.cs" />
+    <Compile Include="Pengaturan\PengaturanTemplate.cs" />
+    <Compile Include="Retur\ReturTemplate.cs" />
     <Compile Include="Report\ReportTemplate.cs" />
     <Compile Include="Report\ReportStrukTemplate.cs" />
-
+    <Compile Include="UI\Charts.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\UiKit.cs" />
     <Compile Include="User\FormUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +104,30 @@
     </Compile>
     <Compile Include="Penjualan\frmPenjualan.Designer.cs">
       <DependentUpon>frmPenjualan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pembelian\frmPembelian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Keuangan\frmKeuangan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLaporan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pengaturan\frmPengaturan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Retur\frmRetur.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Grid\grdBarang.cs">
       <SubType>Form</SubType>

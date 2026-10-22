@@ -1,0 +1,5 @@
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\Root-Icon\bin\Debug\Root-Icon.dll
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\Root-Icon\bin\Debug\Root-Icon.pdb
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\Root-Icon\obj\Debug\Root-Icon.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\Root-Icon\obj\Debug\Root-Icon.dll
+C:\Users\Admin\Desktop\Toko-Root-ID-Source-NoCrystal\Toko-Root-ID-Master\Root-Icon\obj\Debug\Root-Icon.pdb
